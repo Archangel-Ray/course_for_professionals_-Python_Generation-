@@ -33,7 +33,7 @@ from json import load
 from datetime import datetime, time
 
 
-with open('вспомогательные файлы/13/pools.json', encoding='utf-8') as file:
+with open('файлы/13/pools.json', encoding='utf-8') as file:
     pools = load(file)
     pools.sort(key=lambda x: x['DimensionsSummer']['Length'] + x['DimensionsSummer']['Width'])
     for pool_object in range(1, len(pools)):

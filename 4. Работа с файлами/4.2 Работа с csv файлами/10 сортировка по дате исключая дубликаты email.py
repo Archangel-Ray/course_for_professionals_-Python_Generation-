@@ -18,13 +18,13 @@
 import csv
 from datetime import datetime
 
-with open('вспомогательные файлы/name_log.csv', encoding='utf-8') as file_in:
+with open('файлы/name_log.csv', encoding='utf-8') as file_in:
     rows = csv.reader(file_in)
     header_line = next(rows)
     sorted_file = sorted(list(rows), key=lambda x: (x[1], datetime.strptime(x[2], '%d/%m/%Y %H:%M')))
     dict_users = {info[1]: info for info in sorted_file}
 
-with open('вспомогательные файлы/new_name_log.csv', 'w', encoding='utf-8', newline='') as file_out:
+with open('файлы/new_name_log.csv', 'w', encoding='utf-8', newline='') as file_out:
     writer = csv.writer(file_out)
     writer.writerow(header_line)
     writer.writerows(dict_users.values())

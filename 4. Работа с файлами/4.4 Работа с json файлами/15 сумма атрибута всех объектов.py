@@ -27,7 +27,7 @@
 
 from json import load
 
-with open('вспомогательные файлы/15/food_services.json', encoding='utf-8') as file:
+with open('файлы/15/food_services.json', encoding='utf-8') as file:
     there_is_food = load(file)
     all_district = {}
     all_operating_company = {}

@@ -22,4 +22,4 @@ def csv_columns(name):
     return {key: value for key, *value in iterating}
 
 
-print(csv_columns('вспомогательные файлы/deniro - копия.csv'))
+print(csv_columns('файлы/deniro - копия.csv'))

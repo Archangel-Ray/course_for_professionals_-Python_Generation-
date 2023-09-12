@@ -12,8 +12,8 @@ def convert(x):
     return (0, 'A') if x == 'year' else (int(x.split('-')[0]), x.split('-')[1])
 
 
-with open('вспомогательные файлы/student_counts.csv', encoding='utf-8') as file_in, \
-        open('вспомогательные файлы/sorted_student_counts.csv', 'w', encoding='utf-8', newline='') as file_out:
+with open('файлы/student_counts.csv', encoding='utf-8') as file_in, \
+        open('файлы/sorted_student_counts.csv', 'w', encoding='utf-8', newline='') as file_out:
     rows = list(csv.reader(file_in))
     list_classes = list(zip(*rows))
     sorted_list_classes = sorted(list_classes, key=lambda string: convert(string[0]))

@@ -22,7 +22,7 @@ import csv
 
 cheap_product_in_the_store = None
 cheap_price = None
-with open('вспомогательные файлы/prices.csv', encoding='utf-8') as file:
+with open('файлы/prices.csv', encoding='utf-8') as file:
     rows = csv.reader(file, delimiter=';')
     grocery_list = next(rows)
     for line in rows:

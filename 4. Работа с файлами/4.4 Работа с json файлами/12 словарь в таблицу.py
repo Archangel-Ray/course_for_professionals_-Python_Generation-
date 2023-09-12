@@ -23,8 +23,8 @@
 from csv import writer
 from json import load
 
-with open('вспомогательные файлы/12/students.json', encoding='utf-8') as file_dict, \
-        open('вспомогательные файлы/12/data.csv', 'w', encoding='utf-8', newline='') as file_table:
+with open('файлы/12/students.json', encoding='utf-8') as file_dict, \
+        open('файлы/12/data.csv', 'w', encoding='utf-8', newline='') as file_table:
     dict_in = load(file_dict)
     list_out = []
     for dict_object in dict_in:

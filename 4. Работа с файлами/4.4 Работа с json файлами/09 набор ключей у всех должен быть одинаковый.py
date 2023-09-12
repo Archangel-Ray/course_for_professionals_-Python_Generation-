@@ -40,12 +40,12 @@
 
 import json
 
-with open('вспомогательные файлы/09/people.json', encoding='utf-8') as file_in:
+with open('файлы/09/people.json', encoding='utf-8') as file_in:
     list_object = json.load(file_in)
     list_keys = set(keys for string in list_object for keys in string.keys())
     for json_object in list_object:
         for key in list_keys:
             json_object.setdefault(key, None)
 
-with open('вспомогательные файлы/09/updated_people.json', 'w', encoding='utf-8') as file_out:
+with open('файлы/09/updated_people.json', 'w', encoding='utf-8') as file_out:
     json.dump(list_object, file_out, indent=3)

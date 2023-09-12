@@ -11,8 +11,8 @@
 from csv import reader
 from json import dump
 
-with open('вспомогательные файлы/11/playgrounds.csv', encoding='utf-8') as file_table, \
-        open('вспомогательные файлы/11/addresses.json', 'w', encoding='utf-8') as file_dict:
+with open('файлы/11/playgrounds.csv', encoding='utf-8') as file_table, \
+        open('файлы/11/addresses.json', 'w', encoding='utf-8') as file_dict:
     table = reader(file_table, delimiter=';')
     next(table)
     dict_out = {}

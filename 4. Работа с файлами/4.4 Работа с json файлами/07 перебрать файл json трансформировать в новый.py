@@ -34,7 +34,7 @@
 import json
 
 list_string = []
-with open('вспомогательные файлы/07/data.json', encoding='utf-8') as file_in:
+with open('файлы/07/data.json', encoding='utf-8') as file_in:
     for line in json.load(file_in):
         if type(line) is str:
             list_string.append(line + "!")
@@ -48,5 +48,5 @@ with open('вспомогательные файлы/07/data.json', encoding='ut
             line["newkey"] = None
             list_string.append(line)
 
-with open('вспомогательные файлы/07/updated_data.json', 'w', encoding='utf-8') as file_out:
+with open('файлы/07/updated_data.json', 'w', encoding='utf-8') as file_out:
     json.dump(list_string, file_out)

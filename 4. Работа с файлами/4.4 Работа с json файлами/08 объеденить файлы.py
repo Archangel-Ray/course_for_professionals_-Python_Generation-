@@ -40,9 +40,9 @@
 
 import json
 
-with open('вспомогательные файлы/08/data1.json', encoding='utf-8') as json_1, \
-        open('вспомогательные файлы/08/data2.json', encoding='utf-8') as json_2, \
-        open('вспомогательные файлы/08/data_merge.json', 'w', encoding='utf-8') as json_1_2:
+with open('файлы/08/data1.json', encoding='utf-8') as json_1, \
+        open('файлы/08/data2.json', encoding='utf-8') as json_2, \
+        open('файлы/08/data_merge.json', 'w', encoding='utf-8') as json_1_2:
     json_update = json.load(json_1)
     json_update.update(json.load(json_2))
     json.dump(json_update, json_1_2)

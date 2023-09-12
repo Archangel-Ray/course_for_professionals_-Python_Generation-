@@ -18,7 +18,7 @@
 import csv
 
 sort_key = int(input()) - 1
-with open('вспомогательные файлы/deniro.csv', encoding='utf-8') as file:
+with open('файлы/deniro.csv', encoding='utf-8') as file:
     rows = list(csv.reader(file))
 
 rows.sort(key=lambda x: int(x[sort_key]) if x[sort_key].isdigit() else x[sort_key])

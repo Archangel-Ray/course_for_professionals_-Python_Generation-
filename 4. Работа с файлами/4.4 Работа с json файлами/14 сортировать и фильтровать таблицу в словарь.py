@@ -25,7 +25,7 @@ import csv
 import json
 from datetime import datetime
 
-with open('вспомогательные файлы/14/exam_results.csv', encoding='utf-8') as file_in:
+with open('файлы/14/exam_results.csv', encoding='utf-8') as file_in:
     _, *rows = csv.reader(file_in)
     rows = sorted(rows, key=lambda t: datetime.strptime(t[3], '%Y-%m-%d %H:%M:%S'))
 
@@ -51,5 +51,5 @@ for key in sorted(students_dict):
         }
     )
 
-with open('вспомогательные файлы/14/best_scores.json', 'w', encoding='utf-8') as file_out:
+with open('файлы/14/best_scores.json', 'w', encoding='utf-8') as file_out:
     json.dump(ending_list, file_out, indent=3)

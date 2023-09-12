@@ -23,7 +23,7 @@
 import csv
 
 district_city = {}
-with open('вспомогательные файлы/wifi.csv', encoding='utf-8') as file:
+with open('файлы/wifi.csv', encoding='utf-8') as file:
     rows = csv.reader(file, delimiter=';')
     next(rows)
     for string in rows:

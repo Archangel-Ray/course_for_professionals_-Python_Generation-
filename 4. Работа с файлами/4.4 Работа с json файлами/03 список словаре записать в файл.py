@@ -28,5 +28,5 @@ club2 = {"name": "FC Barcelona", "country": "Spain", "founded": 1899,
 club3 = {"name": "FC Manchester United", "country": "England", "founded": 1878,
          "trainer": "Michael Carrick", "goalkeeper": "D. De Gea", "league_position": 8}
 
-with open('вспомогательные файлы/03/data0.json', 'w', encoding='utf-8') as file:
+with open('файлы/03/data0.json', 'w', encoding='utf-8') as file:
     json.dump([club1, club2, club3], file, indent=3)

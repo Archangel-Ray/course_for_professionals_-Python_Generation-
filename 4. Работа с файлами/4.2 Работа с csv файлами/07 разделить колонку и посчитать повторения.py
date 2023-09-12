@@ -20,7 +20,7 @@
 import csv
 
 domains = {}
-with open('вспомогательные файлы/data.csv', encoding='utf-8') as file_in:
+with open('файлы/data.csv', encoding='utf-8') as file_in:
     rows = csv.reader(file_in)
     next(rows)
     for domain in rows:
@@ -30,5 +30,5 @@ with open('вспомогательные файлы/data.csv', encoding='utf-8'
 domain_usage = [['domain', 'count']]
 for key, value in sorted(domains.items(), key=lambda x: (x[1], x[0])):
     domain_usage.append([key, value])
-with open('вспомогательные файлы/domain_usage.csv', 'w', encoding='utf-8', newline='') as file_out:
+with open('файлы/domain_usage.csv', 'w', encoding='utf-8', newline='') as file_out:
     csv.writer(file_out, delimiter=',', quoting=csv.QUOTE_NONE).writerows(domain_usage)

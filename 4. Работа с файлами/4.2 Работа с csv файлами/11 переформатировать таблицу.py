@@ -56,7 +56,7 @@ import csv
 
 def condense_csv(file_name, id_name):
     with open(file_name, encoding='utf-8') as file_in, \
-            open('вспомогательные файлы/condensed.csv', 'w', encoding='utf-8') as file_out:
+            open('файлы/condensed.csv', 'w', encoding='utf-8') as file_out:
         rows = csv.reader(file_in)
         table_header = list()
         table_header.append(id_name)
@@ -77,12 +77,12 @@ def condense_csv(file_name, id_name):
 text = '''01,Title,Ran So Hard the Sun Went Down
 02,Title,Honky Tonk Heroes (Like Me)'''
 
-with open('вспомогательные файлы/data-11.csv', 'w', encoding='utf-8') as file:
+with open('файлы/data-11.csv', 'w', encoding='utf-8') as file:
     file.write(text)
 
-condense_csv('вспомогательные файлы/data-11.csv', id_name='ID')
+condense_csv('файлы/data-11.csv', id_name='ID')
 
-with open('вспомогательные файлы/condensed.csv', encoding='utf-8') as file:
+with open('файлы/condensed.csv', encoding='utf-8') as file:
     print(file.read().strip())
 
 # TEST_2:
@@ -93,12 +93,12 @@ text = '''01,Artist,Otis Taylor
 02,Title,Honky Tonk Heroes (Like Me)
 02,Time,3:29'''
 
-with open('вспомогательные файлы/data-11.csv', 'w', encoding='utf-8') as file:
+with open('файлы/data-11.csv', 'w', encoding='utf-8') as file:
     file.write(text)
 
-condense_csv('вспомогательные файлы/data-11.csv', id_name='ID')
+condense_csv('файлы/data-11.csv', id_name='ID')
 
-with open('вспомогательные файлы/condensed.csv', encoding='utf-8') as file:
+with open('файлы/condensed.csv', encoding='utf-8') as file:
     print(file.read().strip())
 
 # TEST_3:
@@ -112,12 +112,12 @@ text = '''01,Artist,Otis Taylor
 03,Title,Willie Waylon And Me
 03,Time,3:26'''
 
-with open('вспомогательные файлы/data-11.csv', 'w', encoding='utf-8') as file:
+with open('файлы/data-11.csv', 'w', encoding='utf-8') as file:
     file.write(text)
 
-condense_csv('вспомогательные файлы/data-11.csv', id_name='Position')
+condense_csv('файлы/data-11.csv', id_name='Position')
 
-with open('вспомогательные файлы/condensed.csv', encoding='utf-8') as file:
+with open('файлы/condensed.csv', encoding='utf-8') as file:
     print(file.read().strip())
 
 # TEST_4:
@@ -128,10 +128,10 @@ cup,color,blue
 cup,size,1
 cup,notes,none'''
 
-with open('вспомогательные файлы/data-11.csv', 'w', encoding='utf-8') as file:
+with open('файлы/data-11.csv', 'w', encoding='utf-8') as file:
     file.write(text)
 
-condense_csv('вспомогательные файлы/data-11.csv', id_name='ID')
+condense_csv('файлы/data-11.csv', id_name='ID')
 
-with open('вспомогательные файлы/condensed.csv', encoding='utf-8') as file:
+with open('файлы/condensed.csv', encoding='utf-8') as file:
     print(file.read().strip())

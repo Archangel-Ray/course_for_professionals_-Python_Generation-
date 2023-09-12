@@ -14,8 +14,8 @@
 
 import json
 
-with open('вспомогательные файлы/10/countries.json', encoding='utf-8') as file_in, \
-        open('вспомогательные файлы/10/religion.json', 'w', encoding='utf-8') as file_out:
+with open('файлы/10/countries.json', encoding='utf-8') as file_in, \
+        open('файлы/10/religion.json', 'w', encoding='utf-8') as file_out:
     dict_in = json.load(file_in)
     dict_out = {}
     for json_object in dict_in:

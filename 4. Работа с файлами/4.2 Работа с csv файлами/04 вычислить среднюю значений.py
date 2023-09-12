@@ -9,7 +9,7 @@
 
 import csv
 
-with open('вспомогательные файлы/salary_data.csv', encoding='utf-8') as file:
+with open('файлы/salary_data.csv', encoding='utf-8') as file:
     rows = csv.reader(file, delimiter=';')
     next(rows)
     dict_company = {}

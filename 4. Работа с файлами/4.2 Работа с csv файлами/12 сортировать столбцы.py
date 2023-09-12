@@ -12,8 +12,8 @@
 
 import csv
 
-with open('вспомогательные файлы/student_counts.csv', encoding='utf-8') as file_in, \
-        open('вспомогательные файлы/sorted_student_counts.csv', 'w', encoding='utf-8', newline='') as file_out:
+with open('файлы/student_counts.csv', encoding='utf-8') as file_in, \
+        open('файлы/sorted_student_counts.csv', 'w', encoding='utf-8', newline='') as file_out:
     rows = csv.reader(file_in)
     table_name, *column_headings = next(rows)
     dict_rows = {}

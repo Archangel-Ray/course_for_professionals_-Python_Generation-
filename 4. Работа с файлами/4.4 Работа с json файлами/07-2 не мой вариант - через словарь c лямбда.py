@@ -2,7 +2,7 @@
 
 import json
 
-with open('вспомогательные файлы/07/data.json', encoding='utf-8') as file_in:
+with open('файлы/07/data.json', encoding='utf-8') as file_in:
     open_file = json.load(file_in)
 
 converter = {
@@ -20,5 +20,5 @@ for value in open_file:
         new_value = converter[type_value](value)
         new_list.append(new_value)
 
-with open('вспомогательные файлы/07/updated_data.json', 'w', encoding='utf-8') as file_out:
+with open('файлы/07/updated_data.json', 'w', encoding='utf-8') as file_out:
     json.dump(new_list, file_out)

@@ -15,7 +15,7 @@ import csv
 
 male = []
 female = []
-with open('вспомогательные файлы/titanic.csv', encoding='utf-8') as file:
+with open('файлы/titanic.csv', encoding='utf-8') as file:
     for status, name, gender, age in list(csv.reader(file, delimiter=';'))[1:]:
         if status == '1' and float(age) < 18:
             male.append(name) if gender == 'male' else female.append(name)

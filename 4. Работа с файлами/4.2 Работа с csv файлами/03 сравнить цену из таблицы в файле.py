@@ -15,7 +15,7 @@
 
 import csv
 
-with open('вспомогательные файлы/sales.csv', encoding='utf-8') as file:
+with open('файлы/sales.csv', encoding='utf-8') as file:
     rows = csv.reader(file, delimiter=';')
     next(rows)
     for name, old, new in rows:
