@@ -1,0 +1,28 @@
+fun
+  movies
+  songs
+    Alexandra Savior Crying All the Time.mp3 5 MB
+games
+  not released
+    Hollow Knight Silksong.exe 787 KB
+  Psychonauts 2.exe 787 KB
+images
+  code.jpeg 403 KB
+  stepik.png 11 KB
+studying
+  books
+    how to prove.pdf 645 KB
+  data_sets
+    countries.json 22 B
+    data_sample.csv 15 B
+    fonts
+      fontlist-v330.json 94 KB
+    readme.txt 14 B
+    task_results.xlsx 13 KB
+  exam.txt 9 B
+  fipi_demo_2022.pdf 666 KB
+  homework.py 14 B
+earth.jpg 327 KB
+python.pdf 8 MB
+shopping_list.txt 25 B
+test.py 42 B

@@ -1,0 +1,10 @@
+countries.json
+data_sample.csv
+earth.jpg
+exam.txt
+fipi_demo_2022.pdf
+homework.py
+python.pdf
+readme.txt
+shopping_list.txt
+task_results.xlsx
