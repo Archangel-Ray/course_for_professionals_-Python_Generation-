@@ -1,0 +1,64 @@
+name: Alex
+family: dogs
+sex: m
+color: brown
+
+name: Nancy
+family: cats
+sex: w
+color: white
+
+name: Sam
+family: dogs
+sex: m
+color: brown
+
+name: Misha
+family: hedgehogs
+sex: m
+color: black
+
+name: Fredd
+family: cats
+sex: m
+color: white
+
+name: Python
+family: snakes
+sex: w
+color: white
+
+name: Crispy
+family: cats
+sex: w
+color: white
+
+name: Adam
+family: hedgehogs
+sex: m
+color: black
+
+name: Daddy
+family: snakes
+sex: m
+color: brown
+
+name: Mickey
+family: hedgehogs
+sex: m
+color: brown
+
+name: Tom
+family: cats
+sex: m
+color: white
+
+name: Jerry
+family: snakes
+sex: m
+color: brown
+
+name: Chip
+family: hedgehogs
+sex: m
+color: white
